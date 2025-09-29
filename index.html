@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>
+                    <!-- <img src="./logo.png" alt="logo" class="header__logo" /> -->
+                    Todo App™
+                </h1>
+                <p>Quản lý công việc hiệu quả</p>
+            </div>
+            <div class="todo__form">
+                <div class="input__group">
+                    <input type="text" id="todoInput" class="todo__form-input" placeholder="Thêm công việc mới..." />
+                    <button class="btn todo__form-btn-add" id="addBtn">
+                        <span class="add-icon"><i class="fa-solid fa-square-plus"></i></span>
+                        <span class="add-text">Thêm</span>
+                    </button>
+                    <button class="btn todo__form-btn-add-mobile" aria-label="Thêm (mobile)">
+                        <i class="fa-solid fa-square-plus add-icon" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Tất cả</button>
+                    <button class="filter-btn" data-filter="active">Chưa hoàn thành</button>
+                    <button class="filter-btn" data-filter="completed">Đã hoàn thành</button>
+                </div>
+            </div>
+            <div class="todo__list" id="todoList">
+                <!-- Todo items sẽ được render ở đây -->
+            </div>
+            <p class="footer__text">© 2025 - Bản quyền thuộc về Nguyễn Tuấn Minh</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
